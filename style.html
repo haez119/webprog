@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style.html</title>
+    <style>
+        h1{
+            color: darkgreen;
+        }
+        p{
+            color: darkblue;
+            font-size: 15px;
+            border: 1px dotted red;
+        }
+        .def {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* 모든 애들 중에 class가 def이면 적용 */
+        }
+        
+        div{
+            border: 1px dotted rgb(4, 37, 4)
+            /* div에 안에 있는 애들 중에 id가 abc면 적용 */
+        }
+        div#abc {
+            color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>제목란</h1>
+    <div>이곳은 내용입니다.</div>
+    <p>본문입니다.1</p>
+    <p class="def">본문입니다.2</p>
+    <div id="abc">이곳은 부가내용입니다.</div>
+    <div class="def">본문입니다.fff.</div>
+    
+</body>
+</html>
