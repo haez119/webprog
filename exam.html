@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input {
+            background-color: rgb(255, 99, 71);
+        }
+        body {
+            background-image: url("/image/naver.png");
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="text" > ~ 
+    <input type="text" > = 
+    <input type="text" >
+    <div />
+    <p />
+    <input type="button" id="btn" value="ok">
+    <script>
+        var btn = document.getElementById("btn");
+        var inputs = document.querySelectorAll("[type='text']");
+
+        console.log(inputs);
+       
+        btn.onclick = function() {
+
+            var fv = inputs[0].value;
+            var tv = inputs[1].value;
+            var rlt = document.querySelectorAll("div")[0];
+            fv = parseInt(fv); 
+            tv = parseInt(tv); 
+
+            // fv*1 , tv*1
+            var result = 0;
+            for(var i=fv; i<=tv; i++) {
+                result += i;
+            }
+            rlt.innerHTML = result; // 값을 넣을 때
+            
+        }
+    </script>
+</body>
+</html>

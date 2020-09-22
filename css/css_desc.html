@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        div u1 {color: red;}
+        div h2 {color: yellow; background-color: purple;}
+    </style>
+</head>
+<body>
+    <!-- a안에 있는 모든 b에 적용-->
+    <div>
+        <!--div안에 포함 > 스타일 적용됨-->
+        <h2>Descendant Selector_1</h2>
+        <u1>후손 선택자
+            <li>자식의 자식 (후손1)</li>
+            <li>자식의 자식 (후손2)</li>
+        </u1>
+    </div>
+    <!--div에 미포함 > 스타일 적용안됨-->
+    <h2>Descendant Selector_2</h2>
+</body>
+</html>

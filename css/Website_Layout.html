@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 80px;
+  text-align: right;
+  background: no-repeat;
+  background-color: white;
+  background-image: url("../image/naver1.png");
+
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: auto;
+  background-color:white;
+}
+.card c {
+
+  font-weight: bold;
+  float: right;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+
+}
+
+.zz c {
+  font-weight: bold;
+  float: left;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.topnav b {
+  font-size: 15px;
+  font-weight: bold;
+  float: right;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Style the topnav links */
+.topnav a{
+  font-size: 15px;
+  font-weight: bold;
+  float: left;
+  display: block;
+  color:green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover, b:hover {
+  background-color:darkgreen;
+  color:white;
+  
+}
+
+.card c:hover {
+    background: no-repeat;
+    background-color: white;
+    background-image: url("../image/bb.png");
+    color: white;
+}
+
+.zz c:hover {
+    background: no-repeat;
+    background-color: lightpink;
+    color: white;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 35%;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(236, 255, 166);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+
+</div>
+
+<div class="topnav">
+  <a href="#">메일</a>
+  <a href="#">카페</a>
+  <a href="#">블로그</a>
+  <a href="#">지식iN</a>
+  <a href="#">쇼핑</a>
+  <a href="#">Pay</a>
+  <a href="#">TV</a>
+  <b  href="#" style="float:right">웹툰</b>
+  <b  href="#" style="float:right">책</b>
+  <b  href="#" style="float:right">VIBE</b>
+  <b  href="#" style="float:right">영화</b>
+  <b  href="#" style="float:right">지도</b>
+  <b  href="#" style="float:right">부동산</b>
+  <b  href="#" style="float:right">증권</b>
+  <b  href="#" style="float:right">뉴스</b>
+  <b  href="#" style="float:right">사전</b>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div><img src="../image/aa.png" alt=""></div>
+      <c href="#">프레시안</c>
+      <c href="#">스포츠동아</c>
+      <c href="#">전자신문</c>
+      <c href="#">이데일리</c>
+      <c href="#">한국경제</c>
+    </div>
+    <div class="zz">
+      <div ><img src="../image/dd.png" ></div>
+      <c href="#">연예 홈</c>
+      <c href="#">네이버 TV홈</c>
+      <c href="#">V LIVE</c>
+      <c href="#">TOP100</c>
+      <c href="#">시리즈온</c>
+      <div><img src="../image/nn.png" ></div>
+    </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <div><img src="../image/aboutme.png" alt=""></div>
+        </div>
+        <div class="card">
+          <div><img src="../image/qq.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

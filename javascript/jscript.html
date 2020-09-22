@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript/jscript</title>
+</head>
+<body>
+    <h2 id="h2">자바 스크립트</h2>
+
+    <button id="showoff">숨기기</button>
+    <button id="fontSize">폰트변경</button><br>
+    <button id="btnOn"> Turn On Light</button>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" style="width: 100px;">
+    <button onclick='turnOff()'>Turn off Light</button>
+
+    <script>
+        var so = document.getElementById("showoff");
+        so.onclick = function() {
+            
+            document.getElementById("h2").style.display = "none";
+
+            // 이미지 숨기기는 배열이라서 이렇게
+            var img = document.getElementsByTagName("img");
+            img[0].style.display = "none";
+        }
+
+        var fs = document.getElementById("fontSize");
+        fs.onclick = function() {
+            document.getElementById("h2").style.fontSize = "30px";
+        }
+
+        var btnOn = document.getElementById("btnOn");
+        btnOn.onclick = function() {
+           var img = document.getElementsByTagName("img"); // 테그이름으로 가져옴 img가 하나 밖에 없지만 복수로 가져옴 > 배열에 담아야 함
+           img[0].src="https://www.w3schools.com/js/pic_bulbon.gif" 
+        }
+
+        function turnOff() {
+            var img = document.getElementsByTagName("img");
+            img[0].src="https://www.w3schools.com/js/pic_bulboff.gif" 
+        }
+
+    </script>
+
+</body>
+</html>
